@@ -7,22 +7,8 @@ import { RecurrencePatternGeneratorComponent } from './recurrence-pattern-genera
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, CronExpressionEvaluatorComponent, RecurrencePatternGeneratorComponent],
-  template: `
-    <div className="App">
-    <header className="App-header">
-      <h1>Cron Expression Visualizer</h1>
-    </header>
-    <main>
-      <div className="container">
-        <h2>Part 1: Cron Expression Evaluator</h2>
-        <app-cron-expression-evaluator></app-cron-expression-evaluator>
-        
-        <h2>Part 2: Recurrence Pattern Generator</h2>
-        <app-recurrence-pattern-generator></app-recurrence-pattern-generator>
-      </div>
-    </main>
-  </div>
-  `
+  templateUrl:'app.component.html',
+  styleUrl:'app.component.css'
 })
 export class AppComponent {
   title = 'cron_angular';

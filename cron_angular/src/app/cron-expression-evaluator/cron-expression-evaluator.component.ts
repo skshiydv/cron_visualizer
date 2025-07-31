@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   imports: [CommonModule, FormsModule],
   templateUrl: './cron-expression-evaluator.component.html',
-  styleUrls: ['./cron-expression-evaluator.component.css']
+  styleUrl: './cron-expression-evaluator.component.css'
 })
 export class CronExpressionEvaluatorComponent {
   cronExpression: string = '';
@@ -115,6 +115,7 @@ NOTE: You are free to implement the task in any other way as well but shouldn't 
           hours: false,
           days: false,
           month: false,
+
           dayOfWeek: false,
         };
       }
